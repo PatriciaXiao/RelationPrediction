@@ -119,3 +119,11 @@ data/twitter/test.txt
 data/twitter/train.txt
 
 data/twitter/valid.txt
+
+data/twitter_mini/fulldata.txt
+
+data/twitter_mini/train.txt
+
+data/twitter_mini/test.txt
+
+data/twitter_mini/valid.txt

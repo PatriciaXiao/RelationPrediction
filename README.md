@@ -42,4 +42,13 @@ pip install tensorflow
 cd code
 python train.py --settings ../settings/distmult.exp --dataset ../data/Toy
 python train.py --settings ../settings/distmult.exp --dataset ../data/twitter
+python train.py --settings ../settings/distmult.exp --dataset ../data/twitter_mini
 ```
+
+Receives warning:
+```
+WARNING:tensorflow:From /Users/patricia.xiao/Documents/RelationPrediction/venv/lib/python3.6/site-packages/tensorflow/python/util/tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+```
+in the training phase.
