@@ -3,7 +3,9 @@
 DATASET="FB-Toutanova"
 SETTINGS=$1
 
-SCRIPT_DIR=$(dirname $(readlink -f $0))
+SCRIPT_DIR="."$(dirname $(readlink -f $0))
+
+# echo "SCRIPT_DIR='$SCRIPT_DIR'"
 
 VIRTUALENV_PATH=$SCRIPT_DIR"/venv"
 
@@ -15,6 +17,10 @@ ARGUMENT_STRING="--settings "$SETTINGS_PATH" --dataset "$DATASET_PATH
 
 source $VIRTUALENV_PATH"/bin/activate"
 
-$VIRTUALENV_PATH"/bin/python3.5" -u $TRAIN_PATH $ARGUMENT_STRING
+echo "source "$VIRTUALENV_PATH"/bin/activate"
+
+$VIRTUALENV_PATH"/bin/python3.6" -u $TRAIN_PATH $ARGUMENT_STRING
+
+echo "$VIRTUALENV_PATH/bin/python3.6 -u $TRAIN_PATH $ARGUMENT_STRING"
 
 deactivate

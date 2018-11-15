@@ -30,3 +30,22 @@ Please cite our paper if you use this code in your own work:
   year={2017}
 }
 ```
+
+## My notes
+
+```
+virtualenv -p python3 venv
+source ./venv/bin/activate
+pip install theano
+pip install tensorflow
+
+cd code
+python train.py --settings ../settings/gcn_basis.exp --dataset ../data/Toy
+
+```
+
+received a warning
+
+WARNING:tensorflow:From /Users/patricia.xiao/Documents/RelationPrediction/venv/lib/python3.6/site-packages/tensorflow/python/util/tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.

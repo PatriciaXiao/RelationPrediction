@@ -1,6 +1,10 @@
 import argparse
 import random
 
+# https://blog.csdn.net/pwc1996/article/details/52577148
+import sys
+sys.path.append("./optimization")
+
 import tensorflow as tf
 from optimization.optimize import build_tensorflow
 from common import settings_reader, io, model_builder, optimizer_parameter_parser, evaluation, auxilliaries
