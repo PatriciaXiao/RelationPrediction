@@ -107,3 +107,15 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+data/twitter/entities.dict
+
+data/twitter/fulldata.txt
+
+code/train.py
+
+data/twitter/test.txt
+
+data/twitter/train.txt
+
+data/twitter/valid.txt

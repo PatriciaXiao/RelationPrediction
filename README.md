@@ -40,8 +40,7 @@ pip install theano
 pip install tensorflow
 
 cd code
-python train.py --settings ../settings/gcn_basis.exp --dataset ../data/Toy
-
+python train.py --settings ../settings/distmult.exp --dataset ../data/Toy
 ```
 
 received a warning
