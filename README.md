@@ -41,8 +41,11 @@ pip install tensorflow
 
 cd code
 python train.py --settings ../settings/distmult.exp --dataset ../data/Toy
-python train.py --settings ../settings/distmult.exp --dataset ../data/twitter
+python train.py --settings ../settings/distmult.exp --dataset ../data/twitter # will cause segment fault 11
 python train.py --settings ../settings/distmult.exp --dataset ../data/twitter_mini
+python train.py --settings ../settings/my_gcn_block.exp --dataset ../data/wn18
+python train.py --settings ../settings/my_gcn_block.exp --dataset ../data/twitter_mini
+python train.py --settings ../settings/mydistmult.exp --dataset ../data/wn18
 ```
 
 Receives warning:
